@@ -5,4 +5,10 @@ jobs:
   hello:
     runs-on: ubunto-latest
     steps:
-      - run: echo "Hello World" 
+      - name : Print Hello world
+        run: echo "Hello World" 
+
+goodbye:
+  name: My Goodbye job
+  needs: hello
+  run-on: windows-latest
