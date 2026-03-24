@@ -1,0 +1,8 @@
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubunto-latest
+    steps:
+      - run: echo "Hello World" 
