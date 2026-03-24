@@ -1,8 +1,11 @@
+name: My CI workflow
+
 on:
   push:
 
 jobs:
   hello:
+    name: my Hello job
     runs-on: ubunto-latest
     steps:
       - name : Print Hello world
